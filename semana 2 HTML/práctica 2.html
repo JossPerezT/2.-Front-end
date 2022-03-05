@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Elementos compuestos </title>
+</head>
+<body>
+    <h1>Explicación e los Elementos compuestos </h1>
+    
+    <!--Label/Estiquetas-->
+    <label for="Input1">Ejemplo de input de texto</label>
+    <br>
+
+    <!--Entradas-->
+    <input type="text" id="input1" name="input1">
+    <br><br>
+
+
+    <hr>
+    <!--tipos de inputs-->
+    <h2>Input de texto </h2>
+    
+    <label for="correo1">Input de correo</label><br>
+    <input type="email" id="correo1" name="correo1"> <br><br>
+
+    <label for="numero1">Input de número </label><br>
+    <input type="number" id="numero1" name="numero1"> <br><br>
+
+    <label for="psw1">Input de password</label> <br>
+    <input type="password" id="psw1" name="psw1"><br><br>
+
+    <label for="tel1">Input de teléfono</label> <br>
+    <input type="tel" name="tel1" id="tel1" maxlength="10"> <br><br>
+    <label for="url1">Input de URL</label>
+    <input type="url" name="url1" id="url1"><br><br>
+    
+    <hr>
+
+    <h2>Input de selección multiple </h2><br> 
+    <input type="checkbox" name="topping1" id="topping1" value="Cebolla">
+    <label for="topping1">Tacos con cebolla </label><br>
+    <input type="checkbox" name="topping2" id="topping2" value="Cilantro ">
+    <label for="topping2"> Tacos con Cilantro</label><br>
+    <input type="checkbox" name="topping3" id="topping3" value="salsa">
+    <label for="topping3">Tacos con salsa</label><br><br>
+
+
+    <h2>Input de selección única</h2>
+    <input type="radio" name="salsas" id="roja" value="Roja">
+    <label for="roja">Roja</label>
+    <input type="radio" name="salsas" id="verde" value=" "verde>
+    <label for="verde">Verde</label>
+    <input type="radio" name="salsas" id="guacamole" value="Guacamole">
+    <label for="guacamole">Guacamole</label><br><br>
+
+
+    <h1>Select</h1>
+    <label for="tacos">De que la orden</label>
+    <select name="tacos" id="tacos">
+        <option value="suadero">Suadero</option>
+        <option value="pastor">Pastor</option>
+        <option value="campechanos">Campechanos</option>
+        <option value="tripa">Tripa</option>
+
+    </select>
+
+    <h2>Select con input</h2>
+    <label for="refresco">Elija su refresco</label><br>
+    <input list="refresco">
+    <datalist id="refresco">
+        <option value="Coca-Cola"></option>
+        <option value="Manzana"></option>
+        <option value="Naranja"></option>
+        <option value="Mango"></option>
+        <option value="Guayaba"></option>
+    </datalist>
+    <br><br>
+
+    <hr>
+    <h2>Input de fecha </h2>
+    <input type="date" name="fecha1" id="fecha1"><br>
+    <input type="datetime-local|" name="fecha2" id="fecha2">
+    <input type="week" name="fecha3" id="fecha3">
+    <input type="time" name="fecha4" id="fecha4">
+    <input type="month" name="fecha5" id="fecha5">
+
+    <hr>
+    <h2>Input de archivo</h2>
+    <input type="file" name="archivo1" id="archivo1" multiple> <br><br>
+
+    
+    <h2>Input de color</h2><br>
+    <input type="color" name="color1" id="color1"><br><br>
+
+    <h2>Input de rango</h2>
+    <label for="vol">Volumen (entre 0-50):</label><br>
+    <input type="range" name="vol" id="vol" min="0" max="50" step="1"> <br>
+
+
+    <hr>
+
+    <h2>Input de botón</h2>
+    <input type="reset"><br>
+    <input type="submit"> <br>
+    <input type="button" name="boton1" id="boton1" value="Botón 1" onclick="alert('Bienvenidos');"> <br><br>
+
+
+    <hr>
+    <h2>Ejemplo de formulario</h2>
+    <form action="/action.js" id="form1" method="post">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre"> <br><br>
+        <label for="apellido">Apellido</label>
+        <input type="text" name="apellido" id="apellido" form="form1"> <br>
+    </form>
+    <input type="submit" value="Submit" >
+    <input type="reset">
+</body>
+</html>
