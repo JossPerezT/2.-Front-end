@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content=" IE=edge">
+    <meta name="viwport" content = "width=device-width, initial-scale=1.0"> 
+    <link rel="icon" type="image/x.icon" href="logo.png">
+    <title> Pedidos/Administrador </title>
+
+
+<style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        font-family:Georgia, 'Times New Roman', Times, serif
+    
+    }
+    /*Estilo de header*/
+    header{
+        background-color: #0D2922;
+        text-align: center;
+        color: white;
+    }
+    /*nuevo página raul perez*/
+    #logo {
+        margin:auto; 
+        height: 200px;
+        width: 450px;
+        background-image: url(logo.png) ; 
+        background-position: center; 
+        background-repeat: no-repeat;
+        
+    }
+    #logo h2{ 
+        font-family: Georgia, 'Times New Roman', Times, serif, cursive;
+        font-size: 30px;
+        
+    }
+    /*Crear dos columnas con la misma posición en la fila*/
+    nav {
+        float: center;
+        /*only for demostration, should be removed*/
+        height: 75px;
+        background: #55736B;
+        text-align: center;
+    }
+    nav ul {
+        list-style-type: none;
+        display: inline-block;
+        padding: 18px;
+    }
+    nav ul li {
+        float: left;
+        margin-top: 20px;
+    }
+    nav ul li a { 
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 18px;
+
+    }
+    nav ul li a:hover{ 
+        background-color: #929fb3;
+        height: 60px;
+    }
+    /*mios*/
+    th {
+        background-color: #55736B;
+        color: black;
+        text-align: center;
+    }
+    td{
+        background-color:#929fb3;
+        color: black;
+    }
+    h1 {
+        background-color: #0D2922;
+        height: 40px;
+        text-align: center;
+        color: white;
+        text-size-adjust: 100px ;
+
+    }
+    h2 {
+        background-color: white;
+        height: 25px;
+        text-align: center;
+        color: black;
+    }
+    h3 {
+         background-color:white;
+        text-align: left;
+    }
+    h4{
+        background-color:#B38237;
+;
+        text-align: center;
+    }
+    dt { 
+        font-weight: bold;
+        padding-top: 10px;
+        height: 30px;
+        background-position: center; 
+        background-repeat:inherit;
+        color: white;
+    }
+    dl {
+        background-color: #0D2922;
+        text-align: left;
+    }
+    ol{
+        background-color: #0D2922;
+        color: white
+    }
+    table{
+        background-color: #0D2922;
+        text-align: center;
+        tab-size: 30px;
+        block-size: 40px;
+        
+    }
+    p {
+        background-color:#0D2922;
+        background-repeat:inherit;
+        color: white;
+        text-align: center;
+        image-orientation: from-image;
+    }
+
+    /*Estilo de footer*/
+    footer{
+        background-color: #55736B;
+        padding: 25px;
+        height:fit-content
+
+    }
+    #redes {
+        text-align: center;
+        background-color: #55736B;
+    }
+
+</style>
+
+</head>
+<body>
+
+
+<header>  <!-- Logo y titulo -->
+    <div id ="logo"> </div>
+    <nav>
+        <ul>
+            <li><a href="2. Pastelero.html">Inicio</a> </li>
+            <li> <a href="2. administrador-inventario.html">Inventario</a> </li>
+            
+
+
+        </ul>
+    </nav>
+
+
+<h1>Inventario</h1>
+<hr>
+<h1>Pasteles </h1>
+
+
+    <hr>
+    <table style="margin: 0 auto;"> 
+        <h2> Sabores</h2>
+        <tr> 
+            <th>Producto</th>
+            <th>Existecia</th>
+        </tr>
+
+        <tr>
+            <td>Café</td>
+            <td>5</td>
+        </tr>    
+        <tr>
+            <td>Coco</td>
+            <td>10</td>
+        </tr>    
+        <tr>
+            <td>Moka</td>
+            <td>8</td>
+        </tr>    
+        <tr>
+            <td>Tres leches</td>
+            <td>5</td>
+        </tr>    
+        <tr>
+            <td>Vainilla</td>
+            <td>2</td>
+        </tr>    
+        <tr>
+            <td>Nuez</td>
+            <td>7</td>
+        </tr>    
+        <tr>
+            <td>Naranja</td>
+            <td>2</td>
+        </tr>    
+        <tr>
+            <td>Zanahoria</td>
+            <td>5</td>
+        </tr>    
+        <tr>
+            <td>Chocolate</td>
+            <td>3</td>
+        </tr>    
+        <tr>
+            <td>Óreo</td>
+            <td>6</td>
+        </tr>    
+        <tr>
+            <td>Tiramisú</td>
+            <td>4</td>
+        </tr>    
+        <tr>
+            <td>Chocoqueso</td>
+            <td>3</td>
+        </tr>    
+        <tr>
+            <td>Chocoflan</td>
+            <td>7</td>
+        </tr>    
+        <tr>
+            <td>Red Velvet</td>
+            <td>7</td>
+        </tr>    
+
+    </table>
+
+
+
+    <hr>
+    <table style="margin: 0 auto;"> 
+        <h2> Relleno</h2>
+        <tr> 
+            <th>Producto</th>
+            <th>Existecia</th>
+        </tr>
+
+        <tr>
+            <td>Fresa</td>
+            <td>9</td>
+        </tr>    
+        <tr>
+            <td>Durazno</td>
+            <td>10</td>
+        </tr>    
+        <tr>
+            <td>Mango</td>
+            <td>6</td>
+        </tr>    
+        <tr>
+            <td>Piña/td>
+            <td>8</td>
+        </tr>    
+        <tr>
+            <td>Kiwi</td>
+            <td>6</td>
+        </tr>    
+        <tr>
+            <td>Nuez</td>
+            <td>8</td>
+        </tr>    
+        <tr>
+            <td>Crema Pastelera</td>
+            <td>5</td>
+        </tr>    
+        <tr>
+            <td>Mermelada</td>
+            <td>3</td>
+        </tr>    
+        <tr>
+            <td>Chocolate</td>
+            <td>7</td>
+        </tr>    
+        <tr>
+            <td>Óreo</td>
+            <td>1</td>
+        </tr>    
+        <tr>
+            <td>Nutella</td>
+            <td>10</td>
+        </tr>    
+        <tr>
+            <td>Cajeta</td>
+            <td>2</td>
+        </tr>    
+        <tr>
+            <td>Zarzamora</td>
+            <td>5</td>
+        </tr>    
+    </table>
+
+
+
+    <hr>
+    <table style="margin: 0 auto;"> 
+        <h2> Cobertura</h2>
+        <tr> 
+            <th>Producto</th>
+            <th>Existecia</th>
+        </tr>
+
+        <tr>
+            <td>Betún</td>
+            <td>15</td>
+        </tr>    
+        <tr>
+            <td>Crema Batida</td>
+            <td>20</td>
+        </tr>    
+        <tr>
+            <td>Chantillí</td>
+            <td>10</td>
+        </tr>    
+        <tr>
+            <td>Fondant</td>
+            <td>21</td>
+        </tr>    
+        <tr>
+            <td>Buttercream</td>
+            <td>5</td>
+        </tr>    
+    </table>
+
+
+
+
+    <hr>
+    <table style="margin: 0 auto;"> 
+        <h2> Decoración</h2>
+        <tr> 
+            <th>Producto</th>
+            <th>Existecia</th>
+        </tr>
+
+        <tr>
+            <td>Flores Comestibles</td>
+            <td>50</td>
+        </tr>    
+        <tr>
+            <td>Mariposas Comestibles</td>
+            <td>100</td>
+        </tr>    
+        <tr>
+            <td>Plantilla impresa</td>
+            <td>25</td>
+        </tr>    
+        <tr>
+            <td>Perlas de chocolate azul</td>
+            <td>80</td>
+        </tr>    
+        <tr>
+            <td>Perlas de chocolate rosa</td>
+            <td>60</td>
+        </tr>    
+        <tr>
+            <td>Perlas de chocolate morada</td>
+            <td>43</td>
+        </tr>    
+        <tr>
+            <td>Perlas de chocolate plateada</td>
+            <td>32</td>
+        </tr>    
+        <tr>
+            <td>Perlas de chocolate dorada</td>
+            <td>76</td>
+        </tr>    
+        <tr>
+            <td>Perlas de chocolate  verde</td>
+            <td>91</td>
+        </tr>    
+        <tr>
+            <td>Perlas de chocolate amarillo</td>
+            <td>87</td>
+        </tr>  
+        <tr>
+            <td>Bolas de chocolate azul</td>
+            <td>20</td>
+        </tr>    
+        <tr>
+            <td>Bolas de chocolate rosa</td>
+            <td>36</td>
+        </tr>    
+        <tr>
+            <td>Bolas de chocolate morada</td>
+            <td>16</td>
+        </tr>    
+        <tr>
+            <td>Bolas de chocolate plateada</td>
+            <td>13</td>
+        </tr>    
+        <tr>
+            <td>Bolas de chocolate dorada</td>
+            <td>41</td>
+        </tr>    
+        <tr>
+            <td>Bolas de chocolate  verde</td>
+            <td>14</td>
+        </tr>    
+        <tr>
+            <td>Bolas de chocolate amarillo</td>
+            <td>63</td>
+        </tr>  
+        <tr>
+            <td>Chispas de chocolate</td>
+            <td>50</td>
+        </tr> 
+        <tr>
+            <td>Chispas de colores</td>
+            <td>27</td>
+        </tr>   
+        <tr>
+            <td>Hojas doradas</td>
+            <td>10</td>
+        </tr>    
+        <tr>
+            <td>Hojas plateadasa</td>
+            <td>15</td>
+        </tr>    
+
+
+    </table>
+
+
+</header> 
+
+<footer> 
+    <h1> Contacto</h1>
+    <h2 style="background-color: #55736B; text-align: center;"> PASTELERIAS JOSLISZ</h2>
+    <hr>
+    <p id="redes"> 
+        Siguenos tambien en: <br>
+    
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384005.png" alt="facebook" width="50" height="50">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384015.png" alt="instagram" width="50" height="50">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png" alt="linkdin" width="50" height="50">
+        <img src="https://cdn-icons-png.flaticon.com/512/1384/1384017.png" alt="twitter" width="50" height="50">
+        <img src="https://cdn-icons-png.flaticon.com/512/49/49440.png" alt="pinterest" width="50" height="50">
+   
+    <br> Dirección: C. Luis Solis, Mz. 78, Lt. 9. Santa Martha, Estado de México. 
+    <br> Tel: 5532738293
+    <br> pasteleriasjolisz@gmail.com  
+    <br> Horario de atención: Lunes a Sábado, de 9:00hrs a 18:00hrs        
+         
+     </p>
+
+    
+
+</footer>
+
+</body>
+</html>
