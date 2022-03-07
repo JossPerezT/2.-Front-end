@@ -124,7 +124,15 @@
         section { 
             background-color: #0D2922;
         }
+       
         p {
+            background-color:#0D2922;
+            background-repeat:inherit;
+            color: white;
+            text-align: center;
+            image-orientation: from-image;
+        }
+        article {
             background-color:#0D2922;
             color: black;
             text-align: left;
@@ -169,18 +177,248 @@
 
 <h1>Formulario</h1>
 <h2>Datos de contacto</h2>
-<p>
+<article>
     <label for="nombre">Nombre</label> <br>
         <input type="text" id="nombre" name="nombre"> <br><br>
     <label for="tel">Teléfono </label> <br>
-        <input type="number" id="tel" name="tel"> <br><br>
+        <input type="tel" id="tel" name="tel" maxlength="10"> <br><br>
     <label for="correo1">Email</label><br>
         <input type="email" id="correo1" name="correo1"> <br><br>
-       
+<hr>
+<h2>Especificaciones del pastel </h2>
+   <br>  <label for="Descripción">Descripción del pastel (algún mensaje que desee poner)</label> <br>
+        <input type="text" id="Descripción name="Descripción> <br><br>
+
+     <label for="tam">Tamaño del pastel</label> <br>
+        <select name="tam" id="tam">
+            <option value="15">15 cm</option>
+            <option value="20">20 cm</option>
+            <option value="25">25 cm</option>
+            <option value="30">30cm </option>
+            <option value="35">35 cm</option>
+            <option value="40">40cm </option>
+        </select>
+    <br><br>
+        <label for="sab"> Seleccione el sabor (sabores) de su pastel</label> <br><br>
+        
+            <input type="checkbox" name="sab1" id="sab1" value="Cafe">
+            <label for="sab1"> Café </label><br>
+
+            <input type="checkbox" name="sab2" id="sab2" value=" Coco">
+            <label for="sab2"> Coco </label><br>
+
+            <input type="checkbox" name="sab3" id="sab3" value="Moka ">
+            <label for="sab3"> Moka </label><br>
+
+            <input type="checkbox" name="sab4" id="sab4" value="Tres Leches">
+            <label for="sab4"> Tres Leches </label><br>
+
+            <input type="checkbox" name="sab5" id="sab5" value="Vainilla  ">
+            <label for="sab5"> Vainilla </label><br>
+
+            <input type="checkbox" name="sab6" id="sab6" value="Nuez">
+            <label for="sab6"> Nuez </label><br>
+
+            <input type="checkbox" name="sab7" id="sab7" value="Naranja ">
+            <label for="sab7"> Naranja</label><br>
+
+            <input type="checkbox" name="sab8" id="sab8" value=" Zanahoria">
+            <label for="sab8"> Zanahoria </label><br>
+
+            <input type="checkbox" name="sab9" id="sab9" value="Chocolate">
+            <label for="sab9"> Chocolate</label><br><br>
+
+ 
+            <input type="checkbox" name="sab10" id="sab10" value="Oreo">
+            <label for="sab10"> Óreo</label><br>
+
+            <input type="checkbox" name="sab11" id="sab11" value="Tiramisú ">
+            <label for="sab11"> Tiramisú</label><br>
+
+            <input type="checkbox" name="sab12" id="sab12" value=" Chocoqueso">
+            <label for="sab12"> Chocoqueso </label><br>
+
+            <input type="checkbox" name="sab13" id="sab13" value="Chocoflan">
+            <label for="sab13"> Chocoflan</label><br>
+
+            <input type="checkbox" name="sab14" id="sab14" value=" Red Velvet ">
+            <label for="sab14"> Red Velvet</label><br>
+
+<br><br>
+
+    <label for="relleno"> Seleccione el relleno  de su pastel</label> <br>
+
+            <input type="checkbox" name="relleno 1" id="relleno1" value="Fresa">
+            <label for="relleno1"> Fresa </label><br>
+
+            <input type="checkbox" name="relleno 2" id="relleno 2" value=" Durazno">
+            <label for="relleno 2"> Durazno </label><br>
+
+            <input type="checkbox" name="relleno3" id="relleno 3" value="Mango ">
+            <label for="relleno 3"> Mango </label><br>
+
+            <input type="checkbox" name="relleno 4" id="relleno 4" value="Piña ">
+            <label for="relleno 4"> Piña  </label><br>
+
+            <input type="checkbox" name="relleno 5" id="relleno 5" value="Kiwi  ">
+            <label for="relleno 5"> Kiwi </label><br>
+
+            <input type="checkbox" name="relleno 6" id="relleno 6" value="Nuez">
+            <label for="relleno 6"> Nuez </label><br>
+
+            <input type="checkbox" name="relleno 7" id="relleno 7" value="CremaPaste">
+            <label for="relleno 7"> Crema Pastelera</label><br>
+
+            <input type="checkbox" name="relleno 8" id="relleno 8" value=" Mermelada">
+            <label for="relleno 8"> Mermelada </label><br>
+
+            <input type="checkbox" name="relleno 9" id="relleno 9" value="Chocolate">
+            <label for="relleno 9"> Chocolate</label><br>
 
 
+            <input type="checkbox" name="relleno 10" id="relleno 10" value="Oreo">
+            <label for="relleno 10"> Óreo</label><br><br>
 
-</p>
+            <input type="checkbox" name="relleno 11" id="relleno 11" value="Nutella ">
+            <label for="relleno 11"> Nutella</label><br>
+
+            <input type="checkbox" name="relleno 12" id="relleno 12" value=" Cajeta">
+            <label for="relleno 12"> Cajeta </label><br>
+
+            <input type="checkbox" name="relleno 13" id="relleno 13" value="Zarzamora">
+            <label for="relleno13"> Zarzamora</label><br>
+        
+<br><br>
+<label for="Cobertura"> Seleccione la cobertura para su pastel</label> <br> <br>
+
+            <input type="radio" name="cobertura" id="Betún" value="Betún">
+            <label for="roja">Betún</label>
+
+            <input type="radio" name="cobertura" id="Cremab" value=" "Cremab>
+            <label for="verde">Crema Batida</label>
+
+            <input type="radio" name="cobertura" id="Chantillí" value="Chantillí">
+            <label for="guacamole">Chantillí</label>
+
+            <input type="radio" name="cobertura" id="Fondant" value="Fondant">
+            <label for="roja">Fondant</label>
+
+            <input type="radio" name="cobertura" id="Buttercream" value="Buttercream">
+            <label for="verde">Buttercream</label><br><br>
+
+
+<br><br>
+<label for="decoracion"> Seleccione la decoracion de su pastel</label> <br>
+
+            <input type="checkbox" name=" 1" id="1" value="Fresa">
+            <label for="1">  </label><br>
+
+            <input type="checkbox" name=" 2" id=" 2" value=" Durazno">
+            <label for=" 2"> Durazno </label><br>
+
+            <input type="checkbox" name="" id=" 3" value="Mango ">
+            <label for=" 3"> Mango </label><br>
+
+            <input type="checkbox" name=" 4" id=" 4" value="Piña ">
+            <label for=" 4"> Piña  </label><br>
+
+            <input type="checkbox" name=" 5" id=" 5" value="Kiwi  ">
+            <label for=" 5"> Kiwi </label><br>
+
+            <input type="checkbox" name=" 6" id=" 6" value="Nuez">
+            <label for=" 6"> Nuez </label><br>
+
+            <input type="checkbox" name=" 7" id=" 7" value="CremaPaste">
+            <label for=" 7"> Crema Pastelera</label><br>
+
+            <input type="checkbox" name=" 8" id=" 8" value=" Mermelada">
+            <label for=" 8"> Mermelada </label><br>
+
+            <input type="checkbox" name=" 9" id=" 9" value="Chocolate">
+            <label for=" 9"> Chocolate</label><br>
+
+
+            <input type="checkbox" name=" 10" id=" 10" value="Oreo">
+            <label for=" 10"> Óreo</label><br>
+
+            <input type="checkbox" name=" 11" id=" 11" value="Nutella ">
+            <label for=" 11"> Nutella</label><br>
+
+            <input type="checkbox" name=" 12" id=" 12" value=" Cajeta">
+            <label for=" 12"> Cajeta </label><br>
+
+            <input type="checkbox" name=" 13" id=" 13" value="Zarzamora">
+            <label for="13"> Zarzamora</label><br>
+
+            <input type="checkbox" name=" 14" id=" 14" value="Piña ">
+            <label for=" 14"> Piña  </label><br>
+
+            <input type="checkbox" name=" 15" id=" 15" value="Kiwi  ">
+            <label for=" 15"> Kiwi </label><br>
+
+            <input type="checkbox" name=" 16" id=" 16" value="Nuez">
+            <label for=" 16"> Nuez </label><br>
+
+            <input type="checkbox" name=" 17" id=" 17" value="CremaPaste">
+            <label for=" 17"> Crema Pastelera</label><br>
+
+            <input type="checkbox" name=" 18" id=" 18" value=" Mermelada">
+            <label for=" 18"> Mermelada </label><br>
+
+            <input type="checkbox" name=" 19" id=" 19" value="Chocolate">
+            <label for=" 19"> Chocolate</label><br>
+
+            <input type="checkbox" name=" 20" id=" 20" value="Oreo">
+            <label for=" 20"> Óreo</label><br>
+
+            <input type="checkbox" name=" 21" id=" 21" value="Nutella ">
+            <label for=" 21"> Nutella</label><br>
+
+            <input type="checkbox" name=" 12" id=" 22" value=" Cajeta">
+            <label for=" 22"> Cajeta </label><br>
+
+            <input type="checkbox" name=" 23" id=" 23" value="Zarzamora">
+            <label for="23"> Zarzamora</label><br>
+            
+            <input type="checkbox" name=" 24" id=" 24" value="Piña ">
+            <label for=" 24"> Piña  </label><br>
+
+            <input type="checkbox" name=" 25" id=" 25" value="Kiwi  ">
+            <label for=" 25"> Kiwi </label><br>
+
+            <input type="checkbox" name=" 26" id=" 26" value="Nuez">
+            <label for=" 26"> Nuez </label><br>
+
+            <input type="checkbox" name=" 27" id=" 27" value="CremaPaste">
+            <label for=" 27"> Crema Pastelera</label><br>
+
+            <input type="checkbox" name=" 28" id=" 28" value=" Mermelada">
+            <label for=" 28"> Mermelada </label><br>
+
+            <input type="checkbox" name=" 29" id=" 29" value="Chocolate">
+            <label for=" 29"> Chocolate</label><br>
+
+            <input type="checkbox" name=" 13" id=" 30" value="Oreo">
+            <label for=" 30"> Óreo</label><br>
+
+            <input type="checkbox" name=" 31" id="31" value="Fresa">
+            <label for="31">  </label><br>
+
+            <input type="checkbox" name=" 32" id=" 32" value=" Durazno">
+            <label for=" 32"> Durazno </label><br>
+
+            <input type="checkbox" name="" id="33" value="Mango ">
+            <label for="33"> Mango </label><br>
+
+            <input type="checkbox" name=" 34" id=" 34" value="Piña ">
+            <label for=" 34"> Piña  </label><br>
+
+            <input type="checkbox" name=" 35" id=" 35" value="Kiwi  ">
+            <label for=" 35"> Kiwi </label><br>
+
+
+</article>
+
 
 
 
