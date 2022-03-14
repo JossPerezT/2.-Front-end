@@ -1,37 +1,24 @@
+/*General*/
 * {
     font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
     margin-top: 0%;
     margin-right: 0%;
     margin-left: 0%;
     margin-bottom: 0%;
+    box-sizing: border-box;
 }
-
+/*-------------------------------------------------------------------------------------------------------------------------*/
 body{
     margin: 0px;
     padding: 0%;
 }
-.gridContainer {
-    display: grid;
-    grid-template-rows: max-content 5;
-    background-color: white;
-    padding: 0px;
-    grid-template-columns: auto auto auto auto;
-}
-.gridMenu {
-    display: grid;
-    grid-template-rows: max-content 5;
-    background-color: white;
-    padding: 0px;
-}
-.gridItem {
-    border: 1px solid darkslategrey; 
-    padding: 10px;
-}
 
+
+/*fuente*/
 h1 {
     font-size: 75px;
     font-weight: 900;
-    color: rgb(31, 62, 114);
+    color: #1f3e72;
 }
 h2 {
     font-size: 50px;
@@ -45,7 +32,7 @@ h3 {
 }
 p {
         font-size: 20px;
-        color: rgba(31, 62, 114, 0.6)
+        color: #1f3e7299;
    
 }
 h5 {
@@ -59,83 +46,202 @@ h5 {
 h3.lightBlue {
     color: #2949c7;
 }
+/*-------------------------------------------------------------------------------------------------------------------------*/
 
 
-
-
-
-
-i {
-    color: #2c4cca;
+/* Navergación*/ 
+header{
+    display: flex;
+    margin: 0%;
+    width: 100%;
 }
-a {
-    text-decoration: none;
+nav.menu{
+    width: 50%;
+    max-width: auto;
+    height: 80px;
+    max-height: auto;
+    background-color: rgba(44, 110, 221, 0.3);
+    column-gap: 10%;
+    padding: 0;
+    padding-top: 15px;
+    float: center;
+
 }
-ul {
+nav a:hover{
+    background-color: #2949c7;
+    color: black;
+}
+ul { /* Tipo de listas, se le quitan las viñetas*/
     list-style-type: none;
     margin: 0%;
     padding: 0%;
 }
 li {
     float: left;
-    color: white;
-}
-a {
     display: block;
-    padding: 8px;
+    align-items: justify;
+    column-gap: 20%;
+
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*Iconos*/
+i {
+    color: #2c4cca;
+}
+/*-------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/* Decoración de links */
+a {
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+
+}
+/*-------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*Divisiones*/
+.colorFondo {
+    background-color: #2C6EDD;
+    width: 625px ;
+    height: 600px;
 
 }
 .derecha {
     width: 50%;
-    height: 50%;
-    align-content: right;
+    height: auto;
+    float: right;
     position: relative;
-    transform: translate(100%,0%);
-    padding-left: 75px;
-    padding-right: 50px;
+    padding-left: 50px;
+    padding-right: 75px;
+    padding-top: 30px;
+
 }
-.colorFondo {
-    background-color: #2C6EDD;
-}
+
 .izquierda {
     width: 50%;
-    height: 50%;
-    align-content: left;
+    height: auto;
+    float: left;
     position: relative;
-    transform: translate(0%,100%);
-    padding-left: 50px;
-    padding-right: 75px;  
+    padding-left: 75px;
+    padding-right: 50px;
+    padding-top: 30px;
+}
+.centro {
+    width: 70%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    column-gap: 20%;
+    float: center;
 }
 
+/*-------------------------------------------------------------------------------------------------------------------------*/
+
+/*centrar logos vacunas*/
 .center {
-    width: 50%;
+    width: 70%;
     height: 50%;
     opacity: 0.3;
-    align-content: justify;
-    position: relative;
-    transform: translate(50%,50%);
-    justify-content: space-between;
-    align-items: stretch;
-}
-.alinear {
     display: flex;
-    column-gap: 50px;
+    align-items: center;
+    column-gap: 20%;
+    float: center;
 }
+/*-------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*Botones*/
 input {
-    float: inline;
-    height: 25px;
+    float: center;
+    height: 30px;
     align-content: right;
-    border-radius: 5%;
-    border-style: none;
-    box-shadow: grey
+    border-radius: 8%;
 }
 .buttom1 {
+    width: 50vh;
+    max-width: 200px;
+    height: 20vh;
+    max-height: 50px;
     background-color: #5329c7;
+    font-size: large;
     color: white;
+    border-style:groove;
+    border-color: rgba(128, 128, 128, 0.3);
+    padding: 10px;
 }
 .buttom2 {
+    width: 50vh;
+    max-width: 200px;
+    height: 20vh;
+    max-height: 50px;
     background-color: rgba(83, 41, 199,0.3);
+    font-size: large;
     color: #5329c7;
     font-weight: 700;
+    border-style:groove;
+    border-color: rgba(128, 128, 128, 0.3);
+    padding: 10px; 
+}
+/*-------------------------------------------------------------------------------------------------------------------------*/
 
+/*Figuras*/ 
+.triangulo {
+    width: 0;
+    height: 0;
+    border-left: 100% solid #00fc0d;
+    border-top: 50% solid transparent;
+    border-bottom: 50% solid transparent;
+}
+.cuadrado {
+    width: 25vh;
+    max-width: 100px;
+    height: 25vh;
+    max-height: 100px;
+    position: relative;
+    background-color: red;
+}
+.rectangulo {
+    width: 150vh;
+    max-width: 900px;
+    height: 20vh;
+    max-height: 200px;
+    position: relative;
+    background-color: white;
+    border-style:groove;
+    border-color: rgba(128, 128, 128, 0.3);
+    position: absolute;
+    transform: translateX(10px);
+    display: flex;
+    align-items: center;
+    column-gap: 10%;
+    padding: 40px;
+}
+dd dt {
+    float: center;
+    display:flex;
+    align-items: justify;
+    column-gap: 5%;
+
+}
+/*-------------------------------------------------------------------------------------------------------------------------*/
+/*Contenedor para imagen y rectángulo*/
+.contenedor{
+    position: relative;
+}
+
+footer {
+    width: 150vh;
+    max-width: 900px;
+    height: 20vh;
+    max-height: 200px;
+    background-color: rgba(44, 110, 221, 0.3);
+    column-gap: 10%;
+    padding: 0;
+    float: center;
 }
