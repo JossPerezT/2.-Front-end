@@ -12,205 +12,109 @@
 
 <body>
 <!--Navegación-->
-
-    <header> 
-        <div class="izquierda">  <h3 class="lightBlue"> Vaccination </h3> </div>
+    <section id="menú"> 
+        <header> 
+            <div id="vaccination" class="izquierda">  
+                <h3 class="lightBlue"> Vaccination </h3> 
+            </div>
+        
             <nav class="derecha menu"> 
-                <ul>  
-                    <section> <li> <a href="#"> Database </a> </li> </section>
-                    <section> <li> <a href="#"> Education </a> </li> </section> 
-                    <section> <li> <a href="#"> News </a> </li> </section>
-                    <section> <li> <a href="#"> Regulation </a> </li> </section>
-                    <section> <li > <input type="button" id= "buttom1" name ="buttom1" value="Hoax Buster" class="buttom1" onclick="alert ('Enviado');"> </li> 
-                </ul> 
-            </nav>
-            
-    </header> 
+                <ul>   
+                    <li> <a href="#"> Database </a> </li> 
+                    <li> <a href="#"> Education </a> </li> 
+                    <li> <a href="#"> News </a> </li> 
+                    <li> <a href="#"> Regulation </a> </li> 
+                    <li > <input type="button" id= "buttom1" name ="buttom1" value="Hoax Buster" class="buttom1" onclick="alert ('Enviado');"> </li> 
+                </ul>
+            </nav> 
+        </header>         
+    </section>
 
-
+    
 <!-- Primera sección de las vacunas -->
     
-
+    <section id="primeraSeccion" class="contenedor"> 
         <div class="izquierda"> 
             <h1> <br> Fight Virus With Vaccines </h1> <br>
             <p> Let's stop this pandemic by killing the virus with a vaccine, don't let yourself and your family get infected </p> <br> <br>
             <p> <i class="fa-solid fa-shield-virus" style="color: #ffd428"> </i> Best protection </p>  <p>  <i class="fa-solid fa-star" style="color: #ffd428"> </i> Selected Vaccines </p>
         </div> 
     <!-- Imagen de la enfermera-->
-        <section class="contenedor"> 
-                <div  class="derecha"> 
-                    <img src="./img/enfermera.png" alt="Enfermera" width= 625px height = 700px>
-                    
-                </div> 
+        
+        <div  class="derecha"> 
+            <img src="./img/enfermera.png" alt="Enfermera" width= 120% height = 700px>
+        </div> 
 
     <!-- Calendario-->
-
-            <section class="izquierda"> 
-                <br> <br> <br> <p class="negritas"> <i class="fa-solid fa-clock"> </i> Schedule your vaccinations </p> <br> <br>
-                <dl>
-                    <div class="rectangulo">
-                        
-                        <section> 
-                            <p> <i class="fa-solid fa-location-dot"> </i> Location </p> 
-                            <h3>Jakarta Utara</h3> 
-                        </section>
-
-                        <section> 
-                            <p> <i class="fa-solid fa-calendar-days"> </i>  Date </p> 
-                            <h3> 08 July 2021</h3> 
-                        </section>
-
-                        <section> 
-                            <p> <i class="fa-solid fa-pen-to-square"> </i>  Vaccine Type </p> 
-                            <h3> Moderna</h3>
-                        </section>
-
-                        <section> 
-                            <input type="button" value="Submit" class="buttom1"> 
-                        </section>
+        <section class="izquierda"> 
+            <br> <br> <br> <p class="negritas"> <i class="fa-solid fa-clock"> </i> Schedule your vaccinations </p> <br> <br>
+                <section class="rectangulo">
+                    <div> 
+                        <p> <i class="fa-solid fa-location-dot"> </i> Location </p> 
+                        <h3>Jakarta Utara</h3> 
                     </div>
-                </dl>
-            </section>
+
+                    <div> 
+                        <p> <i class="fa-solid fa-calendar-days"> </i>  Date </p> 
+                        <h3> 08 July 2021</h3> 
+                    </div>
+
+                    <div> 
+                        <p> <i class="fa-solid fa-pen-to-square"> </i>  Vaccine Type </p> 
+                        <h3> Moderna</h3>
+                    </div>
+
+                    <di> 
+                        <input type="button" value="Submit" class="buttom1"> 
+                    </di>
+                </section>
+                
         </section>
-    <br>
-<br>
-<br>
+    </section>
+
+    
 <!-- Tipo de vacunas-->
-    <br>
-    <br>
 
-    <div class="center">
-        <img src="./img/astrazneca.png" alt="astrazneca" width="200px" height="100px">
-        <img src="./img/sinovac.png" alt="sinovac" width="125px" height="100px">
-        <img src="./img/pfizer.png" alt="pfizer" width="125px" height="100px">
-        <img src="./img/moderna.png" alt="moderna" width="125px" height="100px">
-    </div>
-    
+    <section id="logosVacuna" class="contenedor"> 
+        <div class="center">
+            <img src="./img/astrazeneca.png" id="Astrazeneca" alt="astrazneca" width="20%" height="20%">
+            <img src="./img/sinovac.png" id="Sinovac" alt="sinovac" width="20%" height="20%">
+            <img src="./img/pfizer.png" id="Pfizer" alt="pfizer" width="20%" height="20%">
+            <img src="./img/moderna.png" id="Moderna" alt="moderna" width="20%" height="20%">
+        </div>
+    </section>
 
 
-<hr>
 <!-- WHY SHOULD I VACCINE? Segunda seccion-->   
-    <br>
-    <br>
-
-    <div class="izquierda"> 
+    <section id="segundaSeccion" class="contenedor izquierda" style="background-color: lightblue;"> 
         <h2> Why should I vaccine? </h2>
-            <p>In order to avoid any doubts about getting the COVID-19 vaccine, identify the following 4 benefits of COVID-19 vaccination: </p>
-
-                <i class="fa-solid fa-sliders"></i> <p class="negritas"> Minimize the spread of viruses </p>
-                <h5> Vaccine has been proven effective to prevent someone from getting infected with Coronavirus </h5>
-
-                <i class="fa-solid fa-user-shield"></i> <p class="negritas"> Forming antibodies </p>
-                <h5> COVID-19 vaccine proven to help shape antibody response for inmune system </h5>
-                <i class="fa-solid fa-users"></i> <p class="negritas">  Protecting people nearby  </p>
-                <h5> The benefits of COVID-19 vaccination are the vaccine that we get can also help protect people around us</h5>
-                <i class="fa-solid fa-chart-line"></i> <p class="negritas">  Creating group immunity </p>
-                <h5> COVID-19 vaccination is also beneficial for creating group immunity or herd immunity </h5>
-
-    </div>
-
-
-<hr> <br>
-    <section> 
-        <!-- Segunda imagen. Mujer-->
-
-            <div  class="colorFondo izquierda" class="izquierda">
-                <img src="./img/mujerSF.png" alt="mujer" width= 100% height = 100%>
-            </div> 
-
-        <!-- PREPARATIONS tercera sección texto-->
-            <section class="derecha">
-                <h2> Preparations Before Vaccine</h2>
-                <p> The success of vaccines is strongly influenced by the stregth of the bodu´s immune system. Therefore, there are several things that can be tried to make the COVID-19 vaccinework:</p>
-
-                <p class="negritas"> <i class="fa-solid fa-circle-xmark"></i> Avoid alcoholic beverages </p>
-                <p class="negritas"> <i class="fa-solid fa-square-xmark"></i> Avoid stres </p>
-                <h5> Stress has a profound effect on inmmune work. Moreover, prolonged stress can increase cortisol production and oxidative stress in the body.</h5>
-                <p class="negritas"> <i class="fa-solid fa-square-poll-vertical"></i> Eat healthy food </p>
-                <p class="negritas"> <i class="fa-solid fa-square-check"></i> Get enough sleep </p>
-                <p class="negritas"> <i class="fa-solid fa-heart"></i> Exercise or physical activity </p>
+            <p class="cuadradoTransparente">In order to avoid any doubts about getting the COVID-19 vaccine, identify the following 4 benefits of COVID-19 vaccination: </p>
+        
+            <section class="contenedor centroCuadro"> 
+                <div class="cuadrado"> 
+                    <i class="fa-solid fa-sliders"></i> <p class="negritas"> Minimize the spread of viruses </p>
+                    <h5> Vaccine has been proven effective to prevent someone from getting infected with Coronavirus </h5>
+                </div>
+        
+                <div class="cuadrado">  
+                    <i class="fa-solid fa-user-shield"></i> <p class="negritas"> Forming antibodies </p>
+                    <h5> COVID-19 vaccine proven to help shape antibody response for inmune system </h5>
+                </div>
+        
+                <div class="cuadrado"> 
+                    <i class="fa-solid fa-users"></i> <p class="negritas">  Protecting people nearby  </p>
+                    <h5> The benefits of COVID-19 vaccination are the vaccine that we get can also help protect people around us</h5>
+                </div>
+        
+                <div class="cuadrado"> 
+                    <i class="fa-solid fa-chart-line"></i> <p class="negritas">  Creating group immunity </p>
+                    <h5> COVID-19 vaccination is also beneficial for creating group immunity or herd immunity </h5>
+                </div>
             </section>
     </section>
-
-<!--EMERGENCY CONTACT última sección -->
-    <section class="izquierda"> 
-      
-        <h2> Emergency Contact </h2>
-        <p>Contact one of the contacts below if you or your family feel unwell and have similar symptoms susch a COVID-19, make sure you also take care of yourself before reporting to us:</p>
-        
-        <p class="negritas"> <i class="fa-solid fa-phone"></i> Call </p>
-        <h5> 021.123.145.14</h5>
-        <p> <input type="button" id= "buttom2" name ="buttom2"  value="Call Now" class="buttom2" onclick="alert ('Calling');"> </p>
-
-        <p class="negritas"> <i class="fa-solid fa-comment-dots"></i> Chat </p>
-        <h5> 021.123.145.14</h5>
-        <p> <input type="button" id= "buttom3" name ="buttom3" value="Chat Now" class="buttom1" onclick="alert ('Chatting');" negritas"> </p>
-
-        <p class="negritas"> <i class="fa-solid fa-video"></i> Video Call</p>
-        <h5> 021.123.145.14</h5>
-        <p> <input type="button" id= "buttom4" name ="buttom4"  value="Video Call Now" class="buttom2" onclick="alert ('Calling');"> </p>
-
-        <p class="negritas"> <i class="fa-solid fa-envelope"></i> Message </p>
-        <h5> 021.123.145.14</h5>
-        <p> <input type="button" id= "buttom5" name ="buttom5"  value="Message Now" class="buttom2" onclick="alert ('Texting');"> </p>
-     
-    </section>
-
-<!-- IMG enfermero-->
-    <div  class="colorFondo derecha">
-        <img src="./img/enfermeroIzq.png" alt="enfermero" width= 100% height = 100%>
-    </div> 
     
-<hr>
-<br>
+    
 
-
-<!-- Footer-->
-    <footer class="centro">
-        <section > 
-            <h3 > Vaccination </h3>
-            <p> Our goal is to help the world free from the ongoing pandemic</p>
-        </section>
-
-        <section> 
-            <h3> About </h3>
-            <p> About us </p>
-            <p>Features </p>
-            <p> News & Blog </p>
-        </section>    
-
-        <section >     
-            <h3> Company</h3>
-            <p> How We Work? </p>
-            <p> Capital </p>
-            <p> Security </p>
-        </section>
-
-        <section> 
-            <h3> Support </h3>
-            <p> FAQ's </p>
-            <p> Support Center </p>
-            <p>  Contact Us</p>
-        </section>
-<br>
-    </footer>
-        <section> 
-            <p> @2021 Vaccination. All rights reserved </p>
-        </section>
-
-        <section >
-            <p> Terms & Agreements </p>
-        </section>
-        
-        <section >
-            <p> Privacy Policy</p>
-        </section>  
-
-
-
-
-
-   
 
 </body>
 </html>
