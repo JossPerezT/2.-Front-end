@@ -212,13 +212,6 @@ input {
 /*-------------------------------------------------------------------------------------------------------------------------*/
 
 /*Figuras*/ 
-.triangulo {
-    width: 0;
-    height: 0;
-    border-left: 100% solid #00fc0d;
-    border-top: 50% solid transparent;
-    border-bottom: 50% solid transparent;
-}
 .cuadradoTransparente {
     width: 100vh;
     max-width: 50%;
@@ -295,13 +288,6 @@ input {
     column-gap: 40%;
     padding: 2%;
 }
-dd dt {
-    float: center;
-    display:flex;
-    align-items: justify;
-    column-gap: 5%;
-
-}
 /*-------------------------------------------------------------------------------------------------------------------------*/
 
 /*Contenedor para imagen, rectángulos y cuadrados*/
@@ -316,7 +302,7 @@ dd dt {
 
 /*Imagenes*/
 .colorFondo {
-    display: block;
+    display: flex;
     background-color: #2C6EDD;
     width: 220vh;
     max-width: 50%;
@@ -359,10 +345,9 @@ dd dt {
     padding: 5%;
     column-gap: 10%;
     margin-top: 0%;
-
 }
 .centro {
-    width: 90%;
+    width: 100%;
     height: 50%;
     display:flex;
     align-items: center;
@@ -370,4 +355,147 @@ dd dt {
 }
 /*-------------------------------------------------------------------------------------------------------------------------*/
 
+@media screen and (max-width:1023px) {
+  .derecha {
+      width: 100%;
+  }
+  .izquierda {
+      width: 100%;
+  }
+  .menu {
+      width: 100%;
+  }
+  .rectanguloCalendario {
+      width: 100%;
+  }
+  .contenedor {
+      width: 100%;
+  }
+  .center{
+      width: 100%;
+  }
+  .cuadradoTransparente {
+    width: 100%;
+  }
+  .centroCuadro {
+    width: 100%;
+  }
+  .cuadradoSegundaSeccion {
+    width: 100%;
+  }
+  .rectanguloPreparations {
+    width: 100%;
+  }
+   .cuadradoTransparente {
+    width: 100%;
+  } 
+  .colorFondo {
+    width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translate(60%,15%);
+  }
+  .mujer {
+      width: 200%;
+      position: relative;
+  }
+  .imgMujer {
+      width: 200%;
+  }
+  .enfermero {
+      width: 100%;
+      position: relative;
+      transform: translate(-40%,15%);
+  }
+  .imgHombre {
+      width: 100%;
 
+  }
+
+  .cuadradoEmergency {
+      width: 100%;
+  }
+  .centro {
+    width: 100%;
+  }
+  .footer {
+      width: 100%;
+      position: relative;
+      bottom: 0%;
+      transform: translateY(30%);
+      background-color: rgba(83, 41, 199, 0.2);
+  }
+
+}
+@media screen and (max-width:767px) {
+    .derecha {
+        width: 100%;
+    }
+    .izquierda {
+        width: 100%;
+    }
+    .menu {
+        width: 100%;
+    }
+    .rectanguloCalendario {
+        width: 100%;
+    }
+    .contenedor {
+        width: 100%;
+    }
+    .center{
+        width: 100%;
+    }
+    .cuadradoTransparente {
+      width: 100%;
+    }
+    .centroCuadro {
+      width: 100%;
+    }
+    .cuadradoSegundaSeccion {
+      width: 100%;
+    }
+    .rectanguloPreparations {
+      width: 100%;
+    }
+     .cuadradoTransparente {
+      width: 100%;
+    } 
+    .colorFondo {
+      width: 100%;
+      position: relative;
+      top: 50%;
+      transform: translate(60%,15%);
+    }
+    .mujer {
+        width: 200%;
+        position: relative;
+    }
+    .imgMujer {
+        width: 200%;
+    }
+    .enfermero {
+        width: 100%;
+        position: relative;
+        transform: translate(-40%,15%);
+    }
+    .imgHombre {
+        width: 100%;
+  
+    }
+  
+    .cuadradoEmergency {
+        width: 100%;
+    }
+    .centro {
+      width: 100%;
+    }
+    .footer {
+        width: 100%;
+        position: relative;
+        bottom: 0%;
+        transform: translateY(30%);
+        background-color: rgba(83, 41, 199, 0.2);
+    }
+  
+  }
