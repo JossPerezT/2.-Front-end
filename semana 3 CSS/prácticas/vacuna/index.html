@@ -1,221 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Vaccination </title>
-    <link rel="stylesheet" href="./css/estilos.css">
-    <link rel="icon" type="image/x.icon" href="./img/logo.jpg">
-    <script src="https://kit.fontawesome.com/f5b8770314.js" crossorigin="anonymous"></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Vaccination </title>
+        <link rel="stylesheet" href="./css/estilos.css">
+        <link rel="icon" type="image/x.icon" href="./img/logo.jpg">
+        <script src="https://kit.fontawesome.com/f5b8770314.js" crossorigin="anonymous"></script>
+    </head>
 
-<body>
-<!--Navegación-->
-    <section id="menú"> 
-        <header> 
-            <div id="vaccination" class="izquierda">  
-                <h3 class="lightBlue"> Vaccination </h3> 
-            </div>
-        
-            <nav class="derecha menu"> 
-                <ul>   
-                    <li> <a href="#"> Database </a> </li> 
-                    <li> <a href="#"> Education </a> </li> 
-                    <li> <a href="#"> News </a> </li> 
-                    <li> <a href="#"> Regulation </a> </li> 
-                    <li > <input type="button" id= "buttom1" name ="buttom1" value="Hoax Buster" class="buttom1" onclick="alert ('Enviado');"> </li> 
-                </ul>
-            </nav> 
-        </header>         
-    </section>
-
-    
-<!-- Primera sección de las vacunas -->
-    
-    <section id="primeraSeccion" class="contenedor"> 
-        <div class="izquierda"> 
-            <h1> <br> Fight Virus With Vaccines </h1> <br>
-            <p> Let's stop this pandemic by killing the virus with a vaccine, don't let yourself and your family get infected </p> <br> <br>
-            <p> <i class="fa-solid fa-shield-virus" style="color: #ffd428"> </i> Best protection </p>  <p>  <i class="fa-solid fa-star" style="color: #ffd428"> </i> Selected Vaccines </p>
-        </div> 
-    <!-- Imagen de la enfermera-->
-        
-        <div  class="derecha"> 
-            <img src="./img/enfermera.png" alt="Enfermera" width= 120% height = 700px>
-        </div> 
-
-    <!-- Calendario-->
-        <section class="izquierda"> 
-            <br> <br> <br> <p class="negritas"> <i class="fa-solid fa-clock"> </i> Schedule your vaccinations </p> <br> <br>
-                <section class="rectangulo">
-                    <div> 
-                        <p> <i class="fa-solid fa-location-dot"> </i> Location </p> 
-                        <h3>Jakarta Utara</h3> 
+    <body>
+        <!--Navegación-->
+            <section id="menú"> 
+                <header> 
+                    <div id="vaccination" class="izquierda">  
+                        <h3 class="lightBlue"> Vaccination </h3> 
                     </div>
-
-                    <div> 
-                        <p> <i class="fa-solid fa-calendar-days"> </i>  Date </p> 
-                        <h3> 08 July 2021</h3> 
-                    </div>
-
-                    <div> 
-                        <p> <i class="fa-solid fa-pen-to-square"> </i>  Vaccine Type </p> 
-                        <h3> Moderna</h3>
-                    </div>
-
-                    <di> 
-                        <input type="button" value="Submit" class="buttom1"> 
-                    </di>
-                </section>
                 
-        </section>
-    </section>
-
-    
-<!-- Tipo de vacunas-->
-
-    <section id="logosVacuna" class="contenedor"> 
-        <div class="center">
-            <img src="./img/astrazeneca.png" id="Astrazeneca" alt="astrazneca" width="20%" height="20%">
-            <img src="./img/sinovac.png" id="Sinovac" alt="sinovac" width="20%" height="20%">
-            <img src="./img/pfizer.png" id="Pfizer" alt="pfizer" width="20%" height="20%">
-            <img src="./img/moderna.png" id="Moderna" alt="moderna" width="20%" height="20%">
-        </div>
-    </section>
-
-
-<!-- WHY SHOULD I VACCINE? Segunda seccion-->   
-    <section id="segundaSeccion" class="contenedor izquierda" style="background-color: lightblue;"> 
-        <h2> Why should I vaccine? </h2>
-            <p class="cuadradoTransparente">In order to avoid any doubts about getting the COVID-19 vaccine, identify the following 4 benefits of COVID-19 vaccination: </p>
-        
-            <section class="contenedor centroCuadro"> 
-                <div class="cuadrado"> 
-                    <i class="fa-solid fa-sliders"></i> <p class="negritas"> Minimize the spread of viruses </p>
-                    <h5> Vaccine has been proven effective to prevent someone from getting infected with Coronavirus </h5>
-                </div>
-        
-                <div class="cuadrado">  
-                    <i class="fa-solid fa-user-shield"></i> <p class="negritas"> Forming antibodies </p>
-                    <h5> COVID-19 vaccine proven to help shape antibody response for inmune system </h5>
-                </div>
-        
-                <div class="cuadrado"> 
-                    <i class="fa-solid fa-users"></i> <p class="negritas">  Protecting people nearby  </p>
-                    <h5> The benefits of COVID-19 vaccination are the vaccine that we get can also help protect people around us</h5>
-                </div>
-        
-                <div class="cuadrado"> 
-                    <i class="fa-solid fa-chart-line"></i> <p class="negritas">  Creating group immunity </p>
-                    <h5> COVID-19 vaccination is also beneficial for creating group immunity or herd immunity </h5>
-                </div>
+                    <nav class="derecha menu"> 
+                        <ul>   
+                            <li> <a href="#"> Database </a> </li> 
+                            <li> <a href="#"> Education </a> </li> 
+                            <li> <a href="#"> News </a> </li> 
+                            <li> <a href="#"> Regulation </a> </li> 
+                            <li > <input type="button" id= "buttom1" name ="buttom1" value="Hoax Buster" class="buttom1" onclick="alert ('Enviado');"> </li> 
+                        </ul>
+                    </nav> 
+                </header>         
             </section>
-    </section>
-    
 
-<!-- A MODIFICAR-->
+            
+        <!-- Primera sección de las vacunas -->
+            
+            <section id="primeraSeccion" class="contenedor"> 
+                <div class="izquierda"> 
+                    <h1> <br> Fight Virus With Vaccines </h1> <br>
+                    <p> Let's stop this pandemic by killing the virus with a vaccine, don't let yourself and your family get infected </p> <br> <br>
+                    <p> <i class="fa-solid fa-shield-virus amarillo"> </i> Best protection </p>
+                    <p> <i class="fa-solid fa-star amarillo"> </i> Selected Vaccines </p> 
 
-
-
-            <br>
-
-            <section class="contenedor" style="background-color: lightyellow;"> 
-
-            <!-- PREPARATIONS tercera sección texto-->
-                <section class="derecha">
-                    <h2> Preparations Before Vaccine</h2>
-                    <p> The success of vaccines is strongly influenced by the stregth of the bodu´s immune system. Therefore, there are several things that can be tried to make the COVID-19 vaccinework:</p>
-
-                    <p class="negritas"> <i class="fa-solid fa-circle-xmark"></i> Avoid alcoholic beverages </p>
-                    <p class="negritas"> <i class="fa-solid fa-square-xmark"></i> Avoid stres </p>
-                    <h5> Stress has a profound effect on inmmune work. Moreover, prolonged stress can increase cortisol production and oxidative stress in the body.</h5>
-                    <p class="negritas"> <i class="fa-solid fa-square-poll-vertical"></i> Eat healthy food </p>
-                    <p class="negritas"> <i class="fa-solid fa-square-check"></i> Get enough sleep </p>
-                    <p class="negritas"> <i class="fa-solid fa-heart"></i> Exercise or physical activity </p>
-                </section>
-            <!-- Segunda imagen. Mujer-->
-
-                <div  class="colorFondo izquierda" class="izquierda">
-                    <img src="./img/mujerSF.png" alt="mujer" width= 100% height = 100%>
                 </div> 
-            </section>
-
-            <!--EMERGENCY CONTACT última sección -->
-            <section class="contenedor" style="background-color: lightgreen;"> 
-            <div class="izquierda"> 
-                <h2> Emergency Contact </h2>
-                <p>Contact one of the contacts below if you or your family feel unwell and have similar symptoms susch a COVID-19, make sure you also take care of yourself before reporting to us:</p>
+            <!-- Imagen de la enfermera-->
                 
-                <p class="negritas"> <i class="fa-solid fa-phone"></i> Call </p>
-                <h5> 021.123.145.14</h5>
-                <p> <input type="button" id= "buttom2" name ="buttom2"  value="Call Now" class="buttom2" onclick="alert ('Calling');"> </p>
+                <div  class="derecha"> 
+                    <img src="./img/enfermera.png" alt="Enfermera" width= 120% height = 700px>
+                </div> 
 
-                <p class="negritas"> <i class="fa-solid fa-comment-dots"></i> Chat </p>
-                <h5> 021.123.145.14</h5>
-                <p> <input type="button" id= "buttom3" name ="buttom3" value="Chat Now" class="buttom1" onclick="alert ('Chatting');" negritas"> </p>
+            <!-- Calendario-->
+                <section class="izquierda"> 
+                    <br> <br> <br> <p class="negritas"> <i class="fa-solid fa-clock"> </i> Schedule your vaccinations </p> <br> <br>
+                        <section class="rectanguloCalendario">
+                            <div> 
+                                <p> <i class="fa-solid fa-location-dot"> </i> Location </p> 
+                                <h3>Jakarta Utara</h3> 
+                            </div>
 
-                <p class="negritas"> <i class="fa-solid fa-video"></i> Video Call</p>
-                <h5> 021.123.145.14</h5>
-                <p> <input type="button" id= "buttom4" name ="buttom4"  value="Video Call Now" class="buttom2" onclick="alert ('Calling');"> </p>
+                            <div> 
+                                <p> <i class="fa-solid fa-calendar-days"> </i>  Date </p> 
+                                <h3> 08 July 2021</h3> 
+                            </div>
 
-                <p class="negritas"> <i class="fa-solid fa-envelope"></i> Message </p>
-                <h5> 021.123.145.14</h5>
-                <p> <input type="button" id= "buttom5" name ="buttom5"  value="Message Now" class="buttom2" onclick="alert ('Texting');"> </p>
-            </div>
+                            <div> 
+                                <p> <i class="fa-solid fa-pen-to-square"> </i>  Vaccine Type </p> 
+                                <h3> Moderna</h3>
+                            </div>
 
-            <!-- IMG enfermero-->
-            <div  class="colorFondo derecha">
-                <img src="./img/enfermeroIzq.png" alt="enfermero" width= 100% height = 100%>
-            </div> 
+                            <di> 
+                                <input type="button" value="Submit" class="buttom1"> 
+                            </di>
+                        </section>
+                        
+                </section>
             </section>
+
+            
+        <!-- Tipo de vacunas-->
+
+            <section id="logosVacuna" class="contenedor"> 
+                <div class="center">
+                    <img src="./img/astrazeneca.png" id="Astrazeneca" alt="astrazneca" width="20%" height="20%">
+                    <img src="./img/sinovac.png" id="Sinovac" alt="sinovac" width="20%" height="20%">
+                    <img src="./img/pfizer.png" id="Pfizer" alt="pfizer" width="20%" height="20%">
+                    <img src="./img/moderna.png" id="Moderna" alt="moderna" width="20%" height="20%">
+                </div>
+            </section>
+
+
+        <!-- WHY SHOULD I VACCINE? Segunda seccion-->   
+            <section id="segundaSeccion" class="contenedor izquierda"> 
+
+                <h2 id="Why"> Why should I vaccine? </h2>
+                    <p class="cuadradoTransparente">In order to avoid any doubts about getting the COVID-19 vaccine, identify the following 4 benefits of COVID-19 vaccination: </p>
+                
+                    <section class="contenedor centroCuadro"> 
+
+                        <div id="cuadro1" class="cuadradoSegundaSeccion"> 
+                            <i class="fa-solid fa-sliders"></i> <p class="negritas"> Minimize the spread of viruses </p>
+                            <h5> Vaccine has been proven effective to prevent someone from getting infected with Coronavirus </h5>
+                        </div>
+                
+                        <div id="cuadro2" class="cuadradoSegundaSeccion">  
+                            <i class="fa-solid fa-user-shield"></i> <p class="negritas"> Forming antibodies </p>
+                            <h5> COVID-19 vaccine proven to help shape antibody response for inmune system </h5>
+                        </div>
+                
+                        <div id="cuadro3" class="cuadradoSegundaSeccion"> 
+                            <i class="fa-solid fa-users"></i> <p class="negritas">  Protecting people nearby  </p>
+                            <h5> The benefits of COVID-19 vaccination are the vaccine that we get can also help protect people around us</h5>
+                        </div>
+                
+                        <div id="cuadro4" class="cuadradoSegundaSeccion"> 
+                            <i class="fa-solid fa-chart-line"></i> <p class="negritas">  Creating group immunity </p>
+                            <h5> COVID-19 vaccination is also beneficial for creating group immunity or herd immunity </h5>
+                        </div>
+                    </section>
+            <br> <br>
+            </section>
+            
 
             <br>
+        <!-- PREPARATIONS tercera sección texto-->
+            <section id="terceraSeccion" class="contenedor">
 
+                <section id="preparaciones" class="derecha">
+                    <h2> Preparations Before Vaccine</h2> <br>
+                    <p> The success of vaccines is strongly influenced by the stregth of the body´s immune system. Therefore, there are several things that can be tried to make the COVID-19 vaccinework:</p> <br> <br>
+                    
+                    <section id="recomendaciones" class="contenedor"> 
 
-            <!-- Footer-->
-            <footer class=" contenedor centro">
-            <section > 
-                <h3 > Vaccination </h3>
-                <p> Our goal is to help the world free from the ongoing pandemic</p>
+                        <div id="recomendacion1" class="rectanguloPreparations"> 
+                            <p class="negritas"> <i class="fa-solid fa-circle-xmark"></i> Avoid alcoholic beverages <i class="fa-solid fa-caret-down arowwDown"></i> </p>
+                        </div>
+
+                        <br>
+
+                        <div id="recomendacion2" class="rectanguloPreparations"> 
+                            <p class="negritas"> <i class="fa-solid fa-square-xmark"></i> Avoid stres <i class="fa-solid fa-caret-down arowwDown"></i> </p>
+                            <div> <h5> Stress has a profound effect on inmmune work. Moreover, prolonged stress can increase cortisol production and oxidative stress in the body.</h5> </div> 
+                        </div>
+                        
+                        <br>
+                            
+                        <div id="recomendacion2" class="rectanguloPreparations"> 
+                        <p class="negritas"> <i class="fa-solid fa-square-poll-vertical"></i> Eat healthy food <i class="fa-solid fa-caret-down arowwDown"></i> </p>
+                        </div>
+                        
+                        <br>
+
+                        <div id="recomendacion3" class="rectanguloPreparations"> 
+                            <p class="negritas"> <i class="fa-solid fa-square-check"></i> Get enough sleep <i class="fa-solid fa-caret-down arowwDown"></i> </p>
+                        </div>
+                        
+                        <br>
+
+                        <div id="recomendacion4" class="rectanguloPreparations"> 
+                            <p class="negritas"> <i class="fa-solid fa-heart"></i> Exercise or physical activity <i class="fa-solid fa-caret-down arowwDown"></i> </p>
+                        </div>
+                    </section>
+
+                </section>
+                <!-- Segunda imagen. Mujer-->
+
+                <section  id="imagenMujer" class=" colorFondo izquierda mujer">
+                    <div class="imgMujer"> 
+                        <img src="./img/mujerSF.png" alt="mujer" id="Mujer" width= 150% height = 150% >
+                    </div>
+                
+                </section> 
             </section>
 
-            <section> 
-                <h3> About </h3>
-                <p> About us </p>
-                <p>Features </p>
-                <p> News & Blog </p>
-            </section>    
 
-            <section >     
-                <h3> Company</h3>
-                <p> How We Work? </p>
-                <p> Capital </p>
-                <p> Security </p>
-            </section>
 
-            <section> 
-                <h3> Support </h3>
-                <p> FAQ's </p>
-                <p> Support Center </p>
-                <p>  Contact Us</p>
+            
+        <!--EMERGENCY CONTACT última sección -->
+            <section id="terceraSeccion" class="contenedor"> 
+
+                <section id="Emergencia" class="izquierda contenedor"> 
+                    <h2 > Emergency Contact </h2>
+                        <p class="cuadradoTransparente" >Contact one of the contacts below if you or your family feel unwell and have similar symptoms susch a COVID-19, make sure you also take care of yourself before reporting to us:</p>
+                    <br><br>
+
+
+                    <section id="contactos1" class="contenedor">
+                        <div id="Llamada" class="cuadradoEmergency"> 
+                            <p class="negritas"> <i class="fa-solid fa-phone"> </i> Call </p> <br>
+                            <h5 class="contacto"> 021.123.145.14</h5> <br> <br>
+                            <p> <input type="button" id= "buttom2" name ="buttom2"  value="Call Now" class="buttom2" onclick="alert ('Calling');"> </p>
+                        </div>
+
+                        <div id="Chat" class="cuadradoEmergency">
+                            <p class="negritas"> <i class="fa-solid fa-comment-dots"> </i> Chat </p> 
+                            <h5 class="contacto"> 021.123.145.14</h5> <br> <br>
+                            <p> <input type="button" id= "buttom3" name ="buttom3" value="Chat Now" class="buttom1" onclick="alert ('Chatting');" negritas"> </p>
+                        </div>
+                    </section>
+                    <br>
+                    <section id="contactos2" class="contenedor">
+                        <div id="VideoLlamada" class="cuadradoEmergency">
+                            <p class="negritas"> <i class="fa-solid fa-video"> </i> Video Call</p> <br>
+                            <h5 class="contacto"> 021.123.145.14</h5> <br> <br>
+                            <p> <input type="button" id= "buttom4" name ="buttom4"  value="Video Call Now" class="buttom2" onclick="alert ('Calling');"> </p>
+                        </div>
+
+                        <div id="Mensaje" class="cuadradoEmergency">
+                            <p class="negritas"> <i class="fa-solid fa-envelope"> </i> Message </p> <br>
+                            <h5 class="contacto"> 021.123.145.14</h5> <br> <br>
+                            <p> <input type="button" id= "buttom5" name ="buttom5"  value="Message Now" class="buttom2" onclick="alert ('Texting');"> </p>
+                        </div>
+                    </section>
+                </section>
+            
+                        <!-- IMG enfermero-->
+                <section class="enfermero derecha colorFondo"> 
+                    <div class="imgHombre">         
+                        <img src="./img/enfermeroIzq.png" alt="enfermero" width= 150% height = 150%>  
+                    </div>        
+                </section> 
             </section>
-            <br>
+            
+
+            
+        <!-- Footer-->
+            <footer id="Footer" class="footer">
+                <section class="centro"> 
+                        <section id="Vaccination"> 
+                            <h3 class="lightBlue"> Vaccination </h3>
+                            <p> Our goal is to help the world free from the on going pandemic</p>
+                        </section>
+            
+                        <section id="About"> 
+                            <h3>About </h3>
+                            <p>About us </p>
+                            <p>Features </p>
+                            <p>News & Blog </p>
+                        </section>    
+            
+                        <section id="Company">     
+                            <h3>Company</h3>
+                            <p>How We Work? </p>
+                            <p>Capital </p>
+                            <p>Security </p>
+                        </section>
+            
+                        <section id="Support"> 
+                            <h3>Support </h3>
+                            <p>FAQ's </p>
+                            <p>Support Center </p>
+                            <p>Contact Us</p>
+                        </section>
+                </section>
+            
+
+<br> <br> 
+                <section class="centro"> 
+                        <section> 
+                            <p> @2021 Vaccination. All rights reserved </p>
+                        </section>
+            
+                        <section >
+                            <p> Terms & Agreements </p>
+                        </section>
+            
+                        <section >
+                            <p> Privacy Policy</p>
+                        </section>  
+                </section>    
             </footer>
-            <section> 
-                <p> @2021 Vaccination. All rights reserved </p>
-            </section>
-
-            <section >
-                <p> Terms & Agreements </p>
-            </section>
-
-            <section >
-                <p> Privacy Policy</p>
-            </section>  
-
-
-
-
-</body>
+    
+            
+    </body>
 </html>
+
+
