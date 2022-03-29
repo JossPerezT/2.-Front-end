@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang=""en">
+<head>
+    <meta charset=""UTF-8">
+    <meta http-equiv=""X-UA-Compatible" content=" IE=edge">
+    <meta name="viwport" content = "width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="style.css">
+    <title> Practica VUE LaunchX </title>
+</head>
+<body> 
+<!--Se usa una div con su ID -->
+    <div id="app">
+        <img v-bind:src = "foto" alt="foto perfil" :class = "genero"> <!-- Se usa esta nueva etiqueta de v-bind por cuestiones de vue para leer la información del objeto, un acortador de v-bind son : -->
+        <h1> {{nombre}} {{apellido}}</h1> <!-- Las dobles llaves se usan por sintaxis para saber que se llamará a una varibale -->
+        <h3> Email: {{email}}</h3>
+        <button v-on:click = "cambiarUsuario()" :class = "genero" > Tener un usuario Random</button> <!-- Se usa v-on para las interacciones del html y el vue = Funciones -->
+    </div> 
+
+
+    <!-- 
+    <script> //para meter directo script
+      Vue.createApp({
+        data() {
+          return { //regresa un objeto
+            message: 'Hello' ,
+            name: 'Explorer'
+          }
+        }
+      }).mount('#app') //En donde se va a montar
+    </script>
+-->
+
+    <script src="https://unpkg.com/vue@3"></script> <!--Voy a usar VUE, sacado de esta URL con el paquete -->    
+    <script src="app.js"> </script>
+</body>
+</html>
