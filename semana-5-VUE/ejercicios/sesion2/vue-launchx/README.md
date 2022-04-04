@@ -1,4 +1,4 @@
-# launchx-vue
+# vue-launchx
 
 ## Project setup
 ```
